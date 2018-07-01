@@ -1,0 +1,382 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/kente"
+            >
+            <!-- Layout for quiz questions. -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome! Let's Test your knowledge about Ghana"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:background="#E6ffffff"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_margin="6dp"
+                    android:background="#E6ffffff"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="What is your name?"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:layout_marginTop="20dp"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter your Name"
+                        android:inputType="text"
+                        android:paddingLeft="20dp"
+                        android:paddingBottom="20dp"
+                        android:paddingRight="20dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_margin="6dp"
+                    android:background="#E6ffffff"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:text="1. Who was the first president of 1st republic of Ghana"/>
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="8dp"
+
+                        >
+                        <RadioButton android:id="@+id/question1_a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Limann"
+                            android:paddingLeft="5dp"
+                            android:onClick="onRadioButtonClicked"
+                            android:textSize="15sp"
+                            />
+                        <RadioButton android:id="@+id/question1_b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="J.J"
+                            android:paddingLeft="5dp"
+                            android:onClick="onRadioButtonClicked"
+                            android:textSize="15sp"
+                            />
+                        <RadioButton android:id="@+id/question1_c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kwame Nkrumah"
+                            android:paddingLeft="5dp"
+                            android:onClick="onRadioButtonClicked"
+                            android:textSize="15sp"
+                            />
+                        <RadioButton android:id="@+id/question1_d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="None"
+                            android:paddingLeft="5dp"
+                            android:onClick="onRadioButtonClicked"
+                            android:textSize="15sp"
+                            />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_margin="6dp"
+                    android:background="#E6ffffff"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:text="2. What was the name of Ghana in 1482?"/>
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="8dp"
+                        >
+                        <RadioButton android:id="@+id/question2_a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="British colony"
+                            android:paddingLeft="5dp"
+                            android:onClick="onRadioButtonClicked"/>
+                        <RadioButton android:id="@+id/question2_b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Asante empire"
+                            android:paddingLeft="5dp"
+                            android:onClick="onRadioButtonClicked"/>
+                        <RadioButton android:id="@+id/question2_c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gold Coast"
+                            android:paddingLeft="5dp"
+                            android:onClick="onRadioButtonClicked"
+                            />
+                        <RadioButton android:id="@+id/question2_d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Warrior king"
+                            android:paddingLeft="5dp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_margin="6dp"
+                    android:background="#E6ffffff"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:text="3. Who made the Ghana coat of arms?"/>
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:paddingRight="8dp"
+                        >
+
+                        <RadioButton android:id="@+id/question3_a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ephraim Amu"
+                            android:paddingLeft="5dp"
+                            android:onClick="onRadioButtonClicked"
+                            />
+                        <RadioButton android:id="@+id/question3_b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kwame Nkrumah"
+                            android:paddingLeft="5dp"
+                            android:onClick="onRadioButtonClicked"/>
+                        <RadioButton android:id="@+id/question3_c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amon kotie"
+                            android:paddingLeft="5dp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_margin="6dp"
+                    android:background="#E6ffffff"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:text="4. Who composed the Ghanaian national anthem?"/>
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        >
+
+                        <RadioButton android:id="@+id/question4_a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kwame Nkrumah "
+                            android:paddingLeft="5dp"
+                            android:onClick="onRadioButtonClicked"
+                            />
+                        <RadioButton android:id="@+id/question4_b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ephraim Amu"
+                            android:paddingLeft="5dp"
+                            android:onClick="onRadioButtonClicked"/>
+                        <RadioButton android:id="@+id/question4_c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Philip Gbeho"
+                            android:paddingLeft="5dp"
+                            android:onClick="onRadioButtonClicked"/>
+                        <RadioButton android:id="@+id/question4_d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Theodosia Okoh"
+                            android:paddingLeft="5dp"
+                            android:onClick="onRadioButtonClicked"/>
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_margin="6dp"
+                    android:background="#E6ffffff"
+
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:text="5. The official currency of Ghana is what?"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <CheckBox
+                            android:id="@+id/checkbox1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cedi"
+                            android:textSize="16sp"
+                            android:paddingLeft="10dp"
+                            android:onClick="onCheckBoxClicked"
+                            />
+                        <CheckBox
+                            android:id="@+id/checkbox2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GHC"
+                            android:textSize="16sp"
+                            android:paddingLeft="10dp"
+                            android:onClick="onCheckBoxClicked"
+                            />
+                        <CheckBox
+                            android:id="@+id/checkbox3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pound Sterling"
+                            android:textSize="16sp"
+                            android:paddingLeft="10dp"
+                            android:onClick="onCheckBoxClicked"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:onClick="showToast"
+                        android:text="Submit" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40dp"
+                        android:onClick="reset"
+                        android:text="Reset" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
